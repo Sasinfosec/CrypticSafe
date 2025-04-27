@@ -32,3 +32,7 @@ jobs:
         run: |
           docker build -t "${{ secrets.DOCKER_USERNAME }}"/kodebackend:latest .
           docker push "${{ secrets.DOCKER_USERNAME }}"/kodebackend:latest
+      - name: Trivy Scanning 
+        run: |
+          sudo snap install trivy
+          trivy image "${{ secrets.DOCKER_USERNAME}}"/kodebackend:latest
