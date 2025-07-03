@@ -17,7 +17,7 @@ RUN chown -R appuser:appgroup /app
 USER appuser
 
 # Expose only the necessary port
-EXPOSE 9090
+EXPOSE 7930
 
 # Set a healthcheck (optional but good practice)
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
