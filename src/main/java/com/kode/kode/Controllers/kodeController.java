@@ -42,5 +42,11 @@ public class kodeController {
         return result;
     }
 
+    @GetMapping("/users")
+    public String users(){
+
+        return "Users Returned";
+    }
+
 
 }
