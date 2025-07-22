@@ -4,6 +4,7 @@ FROM amazoncorretto:17.0.7-alpine
 # Set a working directory
 WORKDIR /app
 
+#Testing the Github Actions
 # Copy the JAR file to the working directory
 COPY ./target/kode-0.0.1-SNAPSHOT.jar app.jar
 
